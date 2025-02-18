@@ -1,56 +1,81 @@
 # Diabetes Detection
 
-This repository focuses on building a machine learning model to detect diabetes using a range of health and lifestyle indicators. The aim is to accurately predict the presence of diabetes based on several features, helping in early diagnosis and preventive healthcare.
+This repository contains a machine learning project aimed at detecting diabetes based on various health indicators. The project includes data preprocessing, exploratory data analysis, feature engineering, and model building with hyperparameter tuning.
+
+## Repository Description
+This repository provides an end-to-end solution for predicting diabetes. It uses a dataset of health metrics, performs detailed exploratory data analysis, and trains machine learning models to classify individuals as diabetic or non-diabetic. The project demonstrates key concepts such as feature engineering, data balancing, and hyperparameter optimization.
+
+## Installation and Requirements
+To run this project, ensure you have the following installed:
+
+- Python 3.7+
+- Required Python libraries:
+  - pandas
+  - numpy
+  - scikit-learn
+  - seaborn
+  - matplotlib
+  - imbalanced-learn
+  - warnings
+
+You can install the dependencies by running:
+```bash
+pip install -r requirements.txt
+```
 
 ## Dataset
-We use the following features for diabetes prediction:
-- **Gender**: Biological sex of the individual  
-- **Age**: Age of the individual  
-- **Hypertension**: Presence of high blood pressure (0 = No, 1 = Yes)  
-- **Heart Disease**: History of cardiovascular issues (0 = No, 1 = Yes)  
-- **Smoking History**: Past or current smoking habits  
-- **BMI**: Body Mass Index  
-- **HbA1c Level**: Average blood glucose levels over the past 3 months  
-- **Blood Glucose Level**: Current blood glucose measurement  
-- **Diabetes**: Target variable indicating the presence (1) or absence (0) of diabetes  
+The project uses the `diabetes_prediction_dataset.csv` dataset. This dataset contains the following features:
 
-## Exploratory Data Analysis (EDA)
-Before training the models, we perform a comprehensive Exploratory Data Analysis to:
-- Understand the distribution and relationship of features  
-- Check for missing values and data imbalances  
-- Visualize patterns and correlations among the features  
+- `age`
+- `bmi`
+- `HbA1c_level`
+- `blood_glucose_level`
+- `hypertension`
+- `heart_disease`
+- `gender`
+- Target: `diabetes`
 
-## Models
-We experiment with the following machine learning models:
-- **Logistic Regression**: Simple and interpretable linear model  
-- **Support Vector Machine (SVM)**: Classifier with the option of using different kernels  
-- **Random Forest**: Ensemble model for better generalization and reduced overfitting  
-- **Gradient Boosting**: Boosting technique for improving accuracy  
-- **k-Nearest Neighbors (k-NN)**: Instance-based learning algorithm  
-
-## Model Evaluation
-Each model is evaluated using accuracy as the primary metric. After training and testing, we compare the performances to select the best model.
+## Key Steps
+1. **Data Loading:** Load and inspect the dataset for initial exploration.
+2. **Data Cleaning:** Handle missing values, duplicates, and outliers.
+3. **Exploratory Data Analysis (EDA):** Visualize correlations, distributions, and feature importance.
+4. **Feature Engineering:** One-hot encode categorical variables and scale numerical features.
+5. **Data Balancing:** Apply SMOTE and undersampling to address class imbalance.
+6. **Model Building:** Train models using a pipeline and optimize with GridSearchCV.
+7. **Evaluation:** Assess model performance using metrics such as accuracy and classification report.
 
 ## Results
-The model with the highest accuracy will be selected for the final deployment. The results and insights from EDA and model evaluation will be documented in detail.
+The best-performing model achieved:
+- **Accuracy:** X%
+- **Precision:** Y%
+- **Recall:** Z%
 
-## How to Use
-1. Clone the repository:  
-    ```bash
-    git clone https://github.com/Abdalla-El-gohary/Diabetes-Detection.git
-    ```
-2. Install the required dependencies:  
-    ```bash
-    pip install -r requirements.txt
-    ```
-3. Run the notebook or script to explore the data and train the models.
+Details of the model and its hyperparameters can be found in the notebook.
 
-## Contributors
-- **Abdalla Elgohary**  
-- **Mahmoud Elgendy**
+## How to Run
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/diabetes-detection.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd diabetes-detection
+   ```
+3. Open the Jupyter Notebook:
+   ```bash
+   jupyter notebook Diabetes_Detection.ipynb
+   ```
+4. Execute the cells step by step to run the analysis and model training.
 
+## Future Work
+- Incorporate additional features for better predictions.
+- Experiment with advanced algorithms like neural networks.
+- Deploy the model using a web application or API.
 
-## Contributions
-Contributions are welcome! Feel free to open issues or submit pull requests for improvements or new features.
+## Credits
+- Dataset sourced from [data source link].
+- Libraries used include scikit-learn, imbalanced-learn, and more.
+- Contributions from the open-source community.
 
-
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.

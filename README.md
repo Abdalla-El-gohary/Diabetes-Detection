@@ -55,7 +55,7 @@ Details of the model and its hyperparameters can be found in the notebook.
 ## How to Run
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/diabetes-detection.git
+   git clone https://github.com/Abdalla-El-gohary/Diabetes-Detection.git
    ```
 2. Navigate to the project directory:
    ```bash
@@ -77,5 +77,7 @@ Details of the model and its hyperparameters can be found in the notebook.
 - Libraries used include scikit-learn, imbalanced-learn, and more.
 - Contributions from the open-source community.
 
-## License
-This project is licensed under the MIT License. See the LICENSE file for details.
+## Contributors
+- **Abdalla Elgohary**
+- **Mahmoud Elgendy** 
+

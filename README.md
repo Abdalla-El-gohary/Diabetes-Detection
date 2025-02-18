@@ -37,7 +37,7 @@ The model with the highest accuracy will be selected for the final deployment. T
 ## How to Use
 1. Clone the repository:  
     ```bash
-    git clone https://github.com/your-username/diabetes-detection.git
+    git clone https://github.com/Abdalla-El-gohary/Diabetes-Detection.git
     ```
 2. Install the required dependencies:  
     ```bash
